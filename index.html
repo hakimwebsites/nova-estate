@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="NOVA Estates property search demo">
+    <title>NOVA Estates | Property</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header><a class="logo" href="#">NOVA<span>ESTATES</span></a>
+        <nav><a href="#properties">Properties</a><a href="#approach">Our approach</a><a href="#contact">Contact</a>
+        </nav><a class="outline" href="#contact">List a property</a><button id="menu">☰</button>
+    </header>
+    <section class="hero">
+        <div>
+            <p class="eyebrow">PRIVATE PROPERTY ADVISORY</p>
+            <h1>Find a place<br>that feels <i>right.</i></h1>
+            <p>Explore a curated collection of homes, apartments and investment opportunities.</p>
+        </div>
+    </section>
+    <section class="search">
+        <div class="tabs"><button class="active" data-mode="Buy">Buy</button><button data-mode="Rent">Rent</button>
+        </div>
+        <div class="filters"><input id="query" placeholder="Search location or property"><select id="type">
+                <option value="">Any type</option>
+                <option>Apartment</option>
+                <option>Villa</option>
+                <option>Townhouse</option>
+            </select><select id="budget">
+                <option value="">Any budget</option>
+                <option value="1000000">Under $1M</option>
+                <option value="2000000">Under $2M</option>
+                <option value="3000000">Under $3M</option>
+            </select><button id="searchBtn">Search</button></div>
+    </section>
+    <section class="properties" id="properties">
+        <div class="top">
+            <div>
+                <p class="eyebrow">FEATURED COLLECTION</p>
+                <h2>Available <i>now.</i></h2>
+            </div><span id="count"></span>
+        </div>
+        <div class="grid" id="grid"></div>
+    </section>
+    <section class="approach" id="approach">
+        <p class="eyebrow">OUR APPROACH</p>
+        <h2>Property decisions,<br><i>made clearer.</i></h2>
+        <p>From first search to final shortlist, NOVA keeps the experience focused on what matters: location, lifestyle
+            and long-term value.</p>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Looking for<br><i>something specific?</i></h2>
+        <form id="form"><input id="name" required placeholder="Your name"><input id="email" type="email" required
+                placeholder="Email"><textarea id="message" rows="4"
+                placeholder="Tell us what you're looking for"></textarea><button>Start a conversation</button>
+            <p id="status"></p>
+        </form>
+    </section>
+    <footer>NOVA ESTATES · Fictional portfolio project</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
